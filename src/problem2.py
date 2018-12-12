@@ -78,3 +78,9 @@ def factor_sum(n):
     ###########################################################################
     # DO NOT modify the above line of code!
     ###########################################################################
+
+
+    total = 0
+    for k in range(n):
+        total = total + n/
+    return total
