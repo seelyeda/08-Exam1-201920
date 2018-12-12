@@ -289,13 +289,14 @@ def problem3b(m, r):
     ###########################################################################
     total = 0
     for k in range(m, r):
-        total = total + ((k + 1)/)
+        total = total + ((k + 1)/(r+(k-1))**(k+1))
     return total
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
 # Do NOT change it.  You do NOT have to do anything with it.
 ###############################################################################
+
 
 def print_expected_result_of_test(arguments, expected,
                                   test_results, format_string, suffix=''):
