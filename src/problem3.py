@@ -172,7 +172,11 @@ def problem3a(r, s):
     #    **  use (call) the   sum_of_digits   function
     #    **  that is DEFINED ABOVE.
     ###########################################################################
+    total = 0
+    for k in range(r, s):
+        total = total + ((k + 1) ** 3)
 
+    return total
 
 def run_test_problem3b():
     """ Tests the   problem3b   function. """
