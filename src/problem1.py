@@ -45,8 +45,6 @@ def run_test_problem1():
     # Test 2:
     square = rg.Square(rg.Point(250, 100), 100)
     square.fill_color = 'cyan'
-    color = 'cyan'
-    outline = 'magenta'
     square.outline_color = 'magenta'
     square.outline_thickness = 6
 
@@ -125,6 +123,13 @@ def problem1(square, thickness, window):
     square.attach_to(window)
     window.render()
     window.close_on_mouse_click()
+
+    square = rg.Square(rg.Point(150, 125), 150)
+    square.fill_color = 'yellow'
+    window.render()
+    window.close_on_mouse_click()
+
+
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
