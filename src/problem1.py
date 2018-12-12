@@ -9,7 +9,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 import rosegraphics as rg
 
 # -----------------------------------------------------------------------------
-# TODO: 2. Right-click on the  src  folder and
+# DONE: 2. Right-click on the  src  folder and
 #              Mark Directory as ... Sources Root,
 #          if you have not already done so.
 # -----------------------------------------------------------------------------
@@ -104,7 +104,12 @@ def problem1(square, thickness, window):
     # TODO: 3. Implement and test this function.  SEE THE PICTURES in the PDF!
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    square = rg.Square(rg.Point(125, 50), 60)
+    square.fill_color = 'red'
+    square.outline_color = 'blue'
+    square.outline_thickness = 3
+    window.render()
+    problem1(square, 6, window)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
