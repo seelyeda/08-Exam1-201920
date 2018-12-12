@@ -287,7 +287,10 @@ def problem3b(m, r):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     ###########################################################################
-
+    total = 0
+    for k in range(m, r):
+        total = total + ((k + 1)/)
+    return total
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
