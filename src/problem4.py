@@ -75,7 +75,7 @@ def problem4(number_of_stairs, step_size, starting_point, window):
     # -------------------------------------------------------------------------
     starting_point = rg.Point()
     step_size =
-    number_of_stairs = 
+    number_of_stairs =
     window.attach(starting_point)
     window.render()
     for k in range():
