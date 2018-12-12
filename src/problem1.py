@@ -34,13 +34,13 @@ def run_test_problem1():
     window = rg.RoseWindow(400, 250, title)
 
     # Test 1:
-    square = rg.Square(rg.Point(125, 50), 60)
-    square.fill_color = 'red'
-    square.outline_color = 'blue'
-    square.outline_thickness = 3
-
-    problem1(square, 6, window)
-    window.continue_on_mouse_click()
+    # square = rg.Square(rg.Point(125, 50), 60)
+    # square.fill_color = 'red'
+    # square.outline_color = 'blue'
+    # square.outline_thickness = 3
+    #
+    # problem1(square, 6, window)
+    # window.continue_on_mouse_click()
 
     # Test 2:
     square = rg.Square(rg.Point(250, 100), 100)
@@ -65,7 +65,7 @@ def run_test_problem1():
     window.close_on_mouse_click()
 
 
-def problem1(square, thickness, outline, color, window, x, y, center):
+def problem1(square, thickness, window):
     """
     See   problem1_picture.pdf   in this project for pictures
     that may help you better understand the following specification:
@@ -106,13 +106,25 @@ def problem1(square, thickness, outline, color, window, x, y, center):
     # TODO: 3. Implement and test this function.  SEE THE PICTURES in the PDF!
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    square = rg.Square(rg.Point(x, y), center)
-    color = square.fill_color
 
-    square.outline_color = outline
-    square.outline_thickness = thickness
+    title = 'Tests 1 & 2 of problem1: '
+    title += 'red & blue, then cyan & magenta'
+    window = rg.RoseWindow(400, 250, title)
+    square = rg.Square(rg.Point(125, 50), 60)
+    square.fill_color = 'red'
+    square.outline_color = 'blue'
+    square.outline_thickness = 3
+    square.attach_to(window)
     window.render()
+    window.close_on_mouse_click()
 
+    square = rg.Square(rg.Point(250, 100), 100)
+    square.fill_color = 'cyan'
+    square.outline_color = 'magenta'
+    square.outline_thickness = 6
+    square.attach_to(window)
+    window.render()
+    window.close_on_mouse_click()
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
