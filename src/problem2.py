@@ -82,5 +82,5 @@ def factor_sum(n):
 
     total = 0
     for k in range(n):
-        total = total + n/
+        total = total + n/(factors_of_(n))
     return total
